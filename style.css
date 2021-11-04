@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1524862655266-89c67a10c4b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1160&q=80');
+    
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+
+header {
+    color:#AD2843;
+    font-size: 5rem;
+}
+
+.content {
+    background-color: rgba(255,255,255,0.9);
+    padding-bottom: 3rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.287);
+    border: 1px solid rgb(221, 219, 219);
+  
+}
+
+header,
+form {
+    
+    width: 1000px;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    
+}
+
+form input {
+    border: 1px solid #AD2843;
+    border-radius: 5px; 
+}
+
+form button {
+    color: #AD2843;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px; 
+    margin-left: .3rem;
+}
+
+form button:hover {
+    background: #AD2843;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    border: 1px solid #AD2843;
+    border-radius: 5px;
+}
+
+.todo li {
+    flex: 1;
+    
+}
+
+.trash-btn,
+.complete-btn {
+    background: #AD2843;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background:  rgb(73, 204, 73);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+    display: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: 1px solid #AD2843;
+    border-radius: 5px;
+
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #AD2843;
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1rem;
+    
+}
+
+.select::after {
+    
+    content: "\25BC";
+    position: absolute;
+    background: #AD2843;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    border: 1px solid #AD2843;
+    border-radius: 5px;
+}
+
+.select:hover::after {
+    background: white;
+    color: #AD2843;
+}
+
+
+
+
